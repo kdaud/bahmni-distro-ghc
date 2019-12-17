@@ -39,7 +39,7 @@
     <initializerVersion>1.2.0-SNAPSHOT</initializerVersion>
 
     <!-- Bahmni modules -->
-    <appointmentsVersion>1.1-SNAPSHOT</appointmentsVersion>
+    <appointmentsVersion>1.2-SNAPSHOT</appointmentsVersion>
     <atomfeedVersion>2.5.6</atomfeedVersion>
     <bacteriologyVersion>1.1</bacteriologyVersion>
     <bahmnicoreVersion>0.92-SNAPSHOT</bahmnicoreVersion>
