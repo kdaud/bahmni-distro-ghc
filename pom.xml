@@ -3,7 +3,7 @@
   <groupId>org.globalhealthcoalition</groupId>
   <artifactId>bahmni-distro-sanpedro</artifactId>
   <name>San Pedro distribution</name>
-  <version>1.1.0-SNAPSHOT</version>
+  <version>1.1.0</version>
   <packaging>pom</packaging>
 
   <developers>
@@ -29,7 +29,7 @@
     <openMRSVersion>2.1.1</openMRSVersion>
 
     <!-- Configs -->
-    <openmrsconfigVersion>1.1.0-SNAPSHOT</openmrsconfigVersion>
+    <openmrsconfigVersion>1.1.0</openmrsconfigVersion>
     <bahmniconfigVersion>1.0.0</bahmniconfigVersion>
 
     <!-- Bahmni Apps -->
