@@ -29,20 +29,20 @@
     <openMRSVersion>2.1.1</openMRSVersion>
 
     <!-- Configs -->
-    <openmrsconfigVersion>1.1.0</openmrsconfigVersion>
-    <bahmniconfigVersion>1.0.0</bahmniconfigVersion>
+    <openmrsconfigVersion>1.2.0-SNAPSHOT</openmrsconfigVersion>
+    <bahmniconfigVersion>1.1.0-SNAPSHOT</bahmniconfigVersion>
 
     <!-- Bahmni Apps -->
     <bahmniappsRevision>6af59f1</bahmniappsRevision>
 
     <!-- In dev -->
     <initializerVersion>1.2.0-SNAPSHOT</initializerVersion>
+    <bahmnicoreVersion>0.93-SNAPSHOT</bahmnicoreVersion>
+    <bacteriologyVersion>1.2-SNAPSHOT</bacteriologyVersion>
 
     <!-- Bahmni modules -->
     <appointmentsVersion>1.2-SNAPSHOT</appointmentsVersion>
     <atomfeedVersion>2.5.6</atomfeedVersion>
-    <bacteriologyVersion>1.1</bacteriologyVersion>
-    <bahmnicoreVersion>0.92-SNAPSHOT</bahmnicoreVersion>
     <bahmniieomodVersion>0.91-SNAPSHOT</bahmniieomodVersion>
     <bedmanagementVersion>5.10.0</bedmanagementVersion>
     <episodesVersion>1.0-SNAPSHOT</episodesVersion>
