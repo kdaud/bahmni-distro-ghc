@@ -26,38 +26,41 @@
     <distro.openmrsmodulesDir>${distro.baseDir}/openmrs_modules</distro.openmrsmodulesDir>
 
     <!-- Core -->
-    <openMRSVersion>2.1.1</openMRSVersion>
+    <openMRSVersion>2.1.3</openMRSVersion>
 
     <!-- Configs -->
-    <openmrsconfigVersion>1.2.0</openmrsconfigVersion>
-    <bahmniconfigVersion>1.1.0</bahmniconfigVersion>
+    <openmrsconfigVersion>1.3.0-SNAPSHOT</openmrsconfigVersion>
+    <bahmniconfigVersion>1.2.0-SNAPSHOT</bahmniconfigVersion>
 
     <!-- Bahmni Apps -->
-    <bahmniappsRevision>6af59f1</bahmniappsRevision>
+    <bahmniappsRevision>530808e</bahmniappsRevision>
 
     <!-- In dev -->
-    <initializerVersion>2.0.0</initializerVersion>
-    <bahmnicoreVersion>0.93-SNAPSHOT</bahmnicoreVersion>
+    <postbahmniVersion>1.2.0-GHC-SNAPSHOT</postbahmniVersion>
+
 
     <!-- Bahmni modules -->
-    <appointmentsVersion>1.2-beta</appointmentsVersion>
+
+    <appointmentsVersion>1.2.1</appointmentsVersion>
     <atomfeedVersion>2.5.6</atomfeedVersion>
-    <bahmniieomodVersion>1.0.0</bahmniieomodVersion>
-    <bedmanagementVersion>5.10.0</bedmanagementVersion>
-    <episodesVersion>1.0-SNAPSHOT</episodesVersion>
-    <idgenwebservicesVersion>1.3-SNAPSHOT</idgenwebservicesVersion>
-    <rulesengineVersion>0.91-SNAPSHOT</rulesengineVersion>
+    <forkedAuditLogVersion>1.1-1.0.0</forkedAuditLogVersion>
+    <forkedBahmnicoreVersion>0.93-1.0.0</forkedBahmnicoreVersion>
+    <forkedBahmniieomodVersion>1.1.0-629dc24</forkedBahmniieomodVersion>
+    <bedmanagementVersion>5.11.0</bedmanagementVersion>
+    <forkedEpisodesVersion>1.0-1.0.0</forkedEpisodesVersion>
+    <forkedIdgenwebservicesVersion>1.3-1.0.0</forkedIdgenwebservicesVersion>
+    <forkedRulesengineVersion>0.92-1.0.0</forkedRulesengineVersion>
 
     <!-- OpenMRS modules -->
-    <auditLogVersion>1.1-SNAPSHOT</auditLogVersion>
-    <addresshierarchyVersion>2.11.0</addresshierarchyVersion>
+    <addresshierarchyVersion>2.12.0</addresshierarchyVersion>
     <appframeworkVersion>2.10.0</appframeworkVersion>
     <bacteriologyVersion>1.2.0</bacteriologyVersion>
     <calculationVersion>1.2</calculationVersion>
-    <emrapiVersion>1.24.5</emrapiVersion>
-    <eventVersion>2.5</eventVersion>
+    <emrapiVersion>1.24.8</emrapiVersion>
+    <eventVersion>2.8.0</eventVersion>
     <htmlwidgetsVersion>1.8.0</htmlwidgetsVersion>
-    <idgenVersion>4.4.1</idgenVersion>
+    <idgenVersion>4.6.0</idgenVersion>
+    <initializerVersion>2.1.0</initializerVersion>
     <legacyuiVersion>1.3.3</legacyuiVersion>
     <metadatamappingVersion>1.3.1</metadatamappingVersion>
     <metadatasharingVersion>1.2.2</metadatasharingVersion>
@@ -70,8 +73,10 @@
     <uicommonsVersion>2.3.0</uicommonsVersion>
     <uiframeworkVersion>3.8</uiframeworkVersion>
     <uilibraryVersion>2.0.5</uilibraryVersion>
-    <webservices.restVersion>2.24.0</webservices.restVersion>
+    <webservices.restVersion>2.29.0</webservices.restVersion>
 
+    	    <!-- Bahmni Reports -->	
+    <bahmniReportsVersion>0.92.1</bahmniReportsVersion>
   </properties>
 
   <dependencies>
@@ -102,30 +107,30 @@
     <dependency>
       <groupId>org.openmrs.module</groupId>
       <artifactId>rulesengine-omod</artifactId>
-      <version>${rulesengineVersion}</version>
+      <version>${forkedRulesengineVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.bahmni.module</groupId>
       <artifactId>bahmnicore-omod</artifactId>
-      <version>${bahmnicoreVersion}</version>
+      <version>${forkedBahmnicoreVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.bahmni.module</groupId>
       <artifactId>reference-data-omod</artifactId>
-      <version>${bahmnicoreVersion}</version>
+      <version>${forkedBahmnicoreVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.openmrs.module</groupId>
       <artifactId>episodes-omod</artifactId>
-      <version>${episodesVersion}</version>
+      <version>${forkedEpisodesVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.bahmni.module</groupId>
       <artifactId>bahmni.ie.apps-omod</artifactId>
-      <version>${bahmniieomodVersion}</version>
+      <version>${forkedBahmniieomodVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.openmrs.module</groupId>
+      <groupId>org.bahmni.module</groupId>
       <artifactId>appointments-omod</artifactId>
       <version>${appointmentsVersion}</version>
     </dependency>
@@ -228,7 +233,7 @@
     <dependency>
       <groupId>org.openmrs.module</groupId>
       <artifactId>idgen-webservices-omod</artifactId>
-      <version>${idgenwebservicesVersion}</version>
+      <version>${forkedIdgenwebservicesVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.openmrs.module</groupId>
@@ -248,7 +253,7 @@
     <dependency>
       <groupId>org.openmrs.module</groupId>
       <artifactId>auditlog-omod</artifactId>
-      <version>${auditLogVersion}</version>
+      <version>${forkedAuditLogVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.ict4h.openmrs</groupId>
@@ -259,6 +264,11 @@
       <groupId>org.openmrs.module</groupId>
       <artifactId>initializer-omod</artifactId>
       <version>${initializerVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.module</groupId>
+      <artifactId>postbahmni-omod</artifactId>
+      <version>${postbahmniVersion}</version>
     </dependency>
   </dependencies>
 
