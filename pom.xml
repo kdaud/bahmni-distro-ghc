@@ -1,9 +1,9 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.globalhealthcoalition</groupId>
-  <artifactId>bahmni-distro-sanpedro</artifactId>
-  <name>San Pedro distribution</name>
-  <version>1.3.0-SNAPSHOT</version>
+  <artifactId>bahmni-distro-ghc</artifactId>
+  <name>GHC distribution</name>
+  <version>2.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <developers>
@@ -29,8 +29,8 @@
     <openMRSVersion>2.1.3</openMRSVersion>
 
     <!-- Configs -->
-    <openmrsconfigVersion>1.3.0-SNAPSHOT</openmrsconfigVersion>
-    <bahmniconfigVersion>1.2.0-SNAPSHOT</bahmniconfigVersion>
+    <openmrsconfigVersion>2.0.0-SNAPSHOT</openmrsconfigVersion>
+    <bahmniconfigVersion>2.0.0-SNAPSHOT</bahmniconfigVersion>
 
     <!-- Bahmni Apps -->
     <bahmniappsRevision>530808e</bahmniappsRevision>
@@ -75,20 +75,20 @@
     <uilibraryVersion>2.0.5</uilibraryVersion>
     <webservices.restVersion>2.29.0</webservices.restVersion>
 
-    	    <!-- Bahmni Reports -->	
+    	    <!-- Bahmni Reports -->
     <bahmniReportsVersion>0.92.1</bahmniReportsVersion>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.globalhealthcoalition</groupId>
-      <artifactId>openmrs-config-sanpedro</artifactId>
+      <artifactId>openmrs-config-ghc</artifactId>
       <type>zip</type>
       <version>${openmrsconfigVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.globalhealthcoalition</groupId>
-      <artifactId>bahmni-config-sanpedro</artifactId>
+      <artifactId>bahmni-config-ghc</artifactId>
       <type>zip</type>
       <version>${bahmniconfigVersion}</version>
     </dependency>
@@ -320,7 +320,7 @@
               <excludeTransitive>true</excludeTransitive>
               <useBaseVersion>true</useBaseVersion>
               <outputDirectory>${distro.openmrsconfigDir}</outputDirectory>
-              <includeArtifactIds>openmrs-config-sanpedro</includeArtifactIds>
+              <includeArtifactIds>openmrs-config-ghc</includeArtifactIds>
             </configuration>
           </execution>
           <!-- Bahmni config -->
@@ -334,7 +334,7 @@
               <excludeTransitive>true</excludeTransitive>
               <useBaseVersion>true</useBaseVersion>
               <outputDirectory>${distro.bahmniconfigDir}</outputDirectory>
-              <includeArtifactIds>bahmni-config-sanpedro</includeArtifactIds>
+              <includeArtifactIds>bahmni-config-ghc</includeArtifactIds>
             </configuration>
           </execution>
           <!-- Bahmni Apps -->
@@ -380,7 +380,7 @@
               <target>
                 <move todir="${distro.openmrsconfigDir}">
                   <fileset dir="${distro.openmrsconfigDir}" />
-                  <mapper type="regexp" from="^openmrs-config-sanpedro(.+)\.zip" to="config.zip" />
+                  <mapper type="regexp" from="^openmrs-config-ghc(.+)\.zip" to="config.zip" />
                 </move>
               </target>
             </configuration>
@@ -395,7 +395,7 @@
               <target>
                 <move todir="${distro.bahmniconfigDir}">
                   <fileset dir="${distro.bahmniconfigDir}" />
-                  <mapper type="regexp" from="^bahmni-config-sanpedro(.+)\.zip" to="config.zip" />
+                  <mapper type="regexp" from="^bahmni-config-ghc(.+)\.zip" to="config.zip" />
                 </move>
               </target>
             </configuration>
