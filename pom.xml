@@ -3,7 +3,7 @@
   <groupId>org.globalhealthcoalition</groupId>
   <artifactId>bahmni-distro-ghc</artifactId>
   <name>GHC distribution</name>
-  <version>2.0.0-SNAPSHOT</version>
+  <version>2.0.0</version>
   <packaging>pom</packaging>
 
   <developers>
@@ -29,14 +29,13 @@
     <openMRSVersion>2.1.3</openMRSVersion>
 
     <!-- Configs -->
-    <openmrsconfigVersion>2.0.0-SNAPSHOT</openmrsconfigVersion>
-    <bahmniconfigVersion>2.0.0-SNAPSHOT</bahmniconfigVersion>
+    <openmrsconfigVersion>2.0.0</openmrsconfigVersion>
+    <bahmniconfigVersion>2.0.0</bahmniconfigVersion>
 
     <!-- Bahmni Apps -->
     <bahmniappsRevision>530808e</bahmniappsRevision>
 
     <!-- In dev -->
-    <postbahmniVersion>1.2.0-GHC-SNAPSHOT</postbahmniVersion>
 
 
     <!-- Bahmni modules -->
@@ -44,8 +43,9 @@
     <appointmentsVersion>1.2.1</appointmentsVersion>
     <atomfeedVersion>2.5.6</atomfeedVersion>
     <forkedAuditLogVersion>1.1-1.0.0</forkedAuditLogVersion>
-    <forkedBahmnicoreVersion>0.93-1.1.0-SNAPSHOT</forkedBahmnicoreVersion>
+    <forkedBahmnicoreVersion>0.93-1.1.0</forkedBahmnicoreVersion>
     <forkedBahmniieomodVersion>1.1.0-629dc24</forkedBahmniieomodVersion>
+    <postbahmniVersion>1.2.0-GHC</postbahmniVersion>
     <bedmanagementVersion>5.11.0</bedmanagementVersion>
     <forkedEpisodesVersion>1.0-1.0.0</forkedEpisodesVersion>
     <forkedIdgenwebservicesVersion>1.3-1.0.0</forkedIdgenwebservicesVersion>
@@ -60,7 +60,7 @@
     <eventVersion>2.8.0</eventVersion>
     <htmlwidgetsVersion>1.8.0</htmlwidgetsVersion>
     <idgenVersion>4.6.0</idgenVersion>
-    <initializerVersion>2.2.0-SNAPSHOT</initializerVersion>
+    <initializerVersion>2.2.0</initializerVersion>
     <legacyuiVersion>1.3.3</legacyuiVersion>
     <metadatamappingVersion>1.3.1</metadatamappingVersion>
     <metadatasharingVersion>1.2.2</metadatasharingVersion>
