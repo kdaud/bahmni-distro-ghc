@@ -33,7 +33,7 @@
     <bahmniconfigVersion>2.3.0-SNAPSHOT</bahmniconfigVersion>
 
     <!-- Bahmni Apps -->
-    <bahmniappsRevision>0849045</bahmniappsRevision>
+    <bahmniappsRevision>aedcc88</bahmniappsRevision>
 
     <!-- In dev -->
 
