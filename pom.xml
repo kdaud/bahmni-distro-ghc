@@ -42,13 +42,15 @@
 
     <appointmentsVersion>1.3.0</appointmentsVersion>
     <atomfeedVersion>2.5.6</atomfeedVersion>
-    <forkedAuditLogVersion>1.1-1.0.0</forkedAuditLogVersion>
-    <forkedBahmnicoreVersion>0.93-1.1.0</forkedBahmnicoreVersion>
-    <forkedBahmniieomodVersion>1.1.0-629dc24</forkedBahmniieomodVersion>
+    <AuditLogVersion>1.1-20180605.115330-1</AuditLogVersion>
+    <BahmnicoreVersion>0.93-20210923.074449-71</BahmnicoreVersion>
+    <ReferenceDataVersion>0.93-20210923.061737-70</ReferenceDataVersion>
+    <BahmniieomodVersion>1.1.0-20200419.130618-4</BahmniieomodVersion>
     <bedmanagementVersion>5.11.0</bedmanagementVersion>
-    <forkedEpisodesVersion>1.0-1.0.0</forkedEpisodesVersion>
-    <forkedIdgenwebservicesVersion>1.3-1.0.0</forkedIdgenwebservicesVersion>
-    <forkedRulesengineVersion>0.92-1.0.0</forkedRulesengineVersion>
+    <EpisodesVersion>1.0-20161205.083536-1</EpisodesVersion> 
+    <IdgenwebservicesVersion>1.3-20221214.114537-2</IdgenwebservicesVersion>
+    <RulesengineVersion>0.92-20180606.071049-1</RulesengineVersion>
+
 
     <!-- OpenMRS modules -->
     <addresshierarchyVersion>2.12.0</addresshierarchyVersion>
@@ -106,27 +108,27 @@
     <dependency>
       <groupId>org.openmrs.module</groupId>
       <artifactId>rulesengine-omod</artifactId>
-      <version>${forkedRulesengineVersion}</version>
+      <version>${RulesengineVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.bahmni.module</groupId>
       <artifactId>bahmnicore-omod</artifactId>
-      <version>${forkedBahmnicoreVersion}</version>
+      <version>${BahmnicoreVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.bahmni.module</groupId>
       <artifactId>reference-data-omod</artifactId>
-      <version>${forkedBahmnicoreVersion}</version>
+      <version>${ReferenceDataVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.openmrs.module</groupId>
       <artifactId>episodes-omod</artifactId>
-      <version>${forkedEpisodesVersion}</version>
+      <version>${EpisodesVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.bahmni.module</groupId>
       <artifactId>bahmni.ie.apps-omod</artifactId>
-      <version>${forkedBahmniieomodVersion}</version>
+      <version>${BahmniieomodVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.bahmni.module</groupId>
@@ -232,7 +234,7 @@
     <dependency>
       <groupId>org.openmrs.module</groupId>
       <artifactId>idgen-webservices-omod</artifactId>
-      <version>${forkedIdgenwebservicesVersion}</version>
+      <version>${IdgenwebservicesVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.openmrs.module</groupId>
@@ -252,7 +254,7 @@
     <dependency>
       <groupId>org.openmrs.module</groupId>
       <artifactId>auditlog-omod</artifactId>
-      <version>${forkedAuditLogVersion}</version>
+      <version>${AuditLogVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.ict4h.openmrs</groupId>
