@@ -3,7 +3,7 @@
   <groupId>org.globalhealthcoalition</groupId>
   <artifactId>bahmni-distro-ghc</artifactId>
   <name>GHC distribution</name>
-  <version>2.3.0-SNAPSHOT</version>
+  <version>2.3.0</version>
   <packaging>pom</packaging>
 
   <developers>
@@ -29,8 +29,8 @@
     <openMRSVersion>2.1.3</openMRSVersion>
 
     <!-- Configs -->
-    <openmrsconfigVersion>2.3.0-SNAPSHOT</openmrsconfigVersion>
-    <bahmniconfigVersion>2.3.0-SNAPSHOT</bahmniconfigVersion>
+    <openmrsconfigVersion>2.3.0</openmrsconfigVersion>
+    <bahmniconfigVersion>2.3.0</bahmniconfigVersion>
 
     <!-- Bahmni Apps -->
     <bahmniappsRevision>0849045</bahmniappsRevision>
@@ -43,7 +43,7 @@
     <appointmentsVersion>1.3.0</appointmentsVersion>
     <atomfeedVersion>2.5.6</atomfeedVersion>
     <AuditLogVersion>1.1-20180605.115330-1</AuditLogVersion>
-    <BahmnicoreVersion>0.93-20210923.074449-71</BahmnicoreVersion>
+    <forkedBahmnicoreVersion>0.93-1.1.0</forkedBahmnicoreVersion>
     <ReferenceDataVersion>0.93-20210923.061737-70</ReferenceDataVersion>
     <BahmniieomodVersion>1.1.0-20200419.130618-4</BahmniieomodVersion>
     <bedmanagementVersion>5.11.0</bedmanagementVersion>
@@ -113,7 +113,7 @@
     <dependency>
       <groupId>org.bahmni.module</groupId>
       <artifactId>bahmnicore-omod</artifactId>
-      <version>${BahmnicoreVersion}</version>
+      <version>${forkedBahmnicoreVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.bahmni.module</groupId>
