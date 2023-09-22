@@ -22,3 +22,18 @@ mvn clean package
 <br/>The OpenMRS bespoke configuration (more [here](https://github.com/globalhealthcoalition/openmrs-config-ghc)) to be processed by the [Initializer module](https://github.com/mekomsolutions/openmrs-module-initializer).
 * `openmrs_core/`
 The target version of OpenMRS Core.
+
+## Release Notes
+
+### Version 2.4.1
+* Added missing 'Wrist/Hand/Finger' to Surgery Priorities
+
+### Version 2.4.0
+* Updated Bahmni IE Apps version.
+* Added New Medications.
+* Arranged appointments services alphabetically.
+* Added units and changed names to TFTs + added decimal points for all lab results.
+* Fixed previous not showing lab results.
+* Added Blood glucose to dashboard.
+* Added numbers for clinical urgency level.
+* Enhanced vitals widget to show up to 3 previous visit.
